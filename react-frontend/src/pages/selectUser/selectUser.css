@@ -1,0 +1,47 @@
+#select-user-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#select-user-title{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#test-user-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.test-user {
+    background-color: var(--light-mode-seafoam);
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+.test-user:hover{
+    cursor: pointer;
+}
+.test-user p {
+    font-size: 1.5em;
+    color: var(--light-color-text);
+}
+
+
+
+/* Styling for desktop and laptop screens */
+@media only screen and (min-width: 600px) {
+    #test-user-wrapper{
+        flex-direction: row;
+    }
+
+    #select-user-title{
+        font-size: 2.5em;
+    }
+
+    .test-user {
+        margin: 0 30px;
+    }
+}

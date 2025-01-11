@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: bookingproject
+  datasource:
+    url: jdbc:postgresql://db:5432/postgres
+    username: postgres
+    password: Strong^booking*Password!!
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+
+server:
+  error:
+    include-message: on_param
+
+security:
+  allowedOrigins: "http://localhost:3000, http://localhost:5173"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+  jpa:
+    show-sql: true

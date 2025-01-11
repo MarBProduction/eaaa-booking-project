@@ -1,0 +1,10 @@
+#time-date-wrapper {
+    margin-bottom: 2em;
+}
+
+#date {
+    margin-bottom: 20px;
+    color: var(--light-mode-seafoam);
+    font-size: 2.2em;
+    border: none
+}

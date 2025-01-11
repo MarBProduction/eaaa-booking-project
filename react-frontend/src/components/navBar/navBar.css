@@ -1,0 +1,50 @@
+#nav-wrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.nav-item {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--light-mode-seafoam);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.nav-item span {
+    display: none;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.active-nav-item {
+    color: var(--light-mode-dark-seafoam);
+    border-bottom: solid 2px;
+}
+.active-nav-item:hover {
+    text-decoration: none;
+}
+
+
+/* Styling for desktop and laptop screens */
+@media only screen and (min-width: 1000px) {
+    #nav-wrapper {
+        flex-direction: column;
+        margin-right: 50px;
+        width: 200px;
+    }
+
+    .nav-item {
+        margin-bottom: 15px;
+    }
+
+    .active-nav-item {
+        color: var(--light-mode-dark-seafoam);
+        border: none;
+    }
+    .active-nav-item span {
+        display: inline;
+    }
+}

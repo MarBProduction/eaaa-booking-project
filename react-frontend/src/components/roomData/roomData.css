@@ -1,0 +1,55 @@
+#room-info-wrapper {
+    background-color: var(--light-mode-light-grey);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.room-info-segment {
+    margin-bottom: 50px;
+}
+
+.info-sub-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--light-mode-seafoam);
+}
+
+.room-bookings-time {
+    margin-bottom: 20px;
+}
+
+#room-available-text {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#book-selected-room {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    min-width: 110px;
+}
+
+.button-activated {
+    background-color: var(--light-mode-green);
+}
+.button-activated:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.button-deactivated {
+    background-color: var(--light-mode-grey);
+    color: var(--light-mode-dark-grey);
+}
+
+
+/* Styling for desktop and laptop screens */
+@media only screen and (min-width: 1000px) {
+    #room-info-wrapper {
+        width: 49%;
+    }
+}

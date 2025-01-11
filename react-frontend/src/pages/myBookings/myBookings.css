@@ -1,0 +1,35 @@
+#my-bookings-wrapper {
+    width: 100%;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#booking-headers {
+    display: flex;
+    justify-content: space-between;
+}
+#booking-headers p {
+    color: var(--light-mode-seafoam);
+    font-size: 1.2em;
+    width: 33%;
+}
+
+#header-bookings-divider{
+    height: 1px;
+    border: solid 1px var(--light-mode-dark-seafoam);
+    background-color: var(--light-mode-dark-seafoam);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#my-bookings {
+    overflow-y: scroll;
+    height: 75vh;
+}
+
+
+
+/* Styling for desktop and laptop screens */
+@media only screen and (min-width: 1000px) {
+}

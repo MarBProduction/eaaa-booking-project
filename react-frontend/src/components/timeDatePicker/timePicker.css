@@ -1,0 +1,33 @@
+.time-picker-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.time-label {
+    margin-right: 30px;
+    font-size: 1.2em;
+    width: 70px;
+}
+
+.time-select-wrapper {
+    display: flex;
+    align-items: center;
+    border: solid 2px var(--light-mode-grey);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.time-picker {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 32px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: solid 1px var(--light-mode-seafoam);
+    color: var(--light-mode-dark-seafoam);
+}

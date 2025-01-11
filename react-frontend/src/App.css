@@ -1,0 +1,120 @@
+:root {
+    --light-color-text: white;
+    --dark-color-text: #4f4f4f;
+
+    --darkest-grey: #0f1316;
+    --darker-grey: #222629;
+    --dark-grey: #787878;
+    --medium-grey: #909090;
+    --light-grey: #d9d9d9;
+    --red: #7b1919;
+    --yellow: #907526;
+    --green: #366c5e;
+    --seafoam-green: #7eb4be;
+  
+    --light-mode-dark-text: #393939;
+    --light-mode-dark-grey: #a9a9ae;
+    --light-mode-grey: #c7cdd1;
+    --light-mode-light-grey: #f5f5f5;
+    --light-mode-red: #e17e7e;
+    --light-mode-yellow: #dcb851;
+    --light-mode-green: #5cd393;
+    --light-mode-dark-seafoam: #2d3b45;
+    --light-mode-seafoam: #7bb5c1;
+    --boxshadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+* {
+    font-family: "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+html {
+    color: var(--light-mode-dark-seafoam);
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#topbar button {
+    background-color: var(--light-mode-red);
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    width: 80px;
+    cursor: pointer;
+}
+
+#logged-in-info-desktop {
+    display: none;
+}
+#logged-in-info-mobil {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.divider {
+    height: 1px;
+    border: solid 1px var(--light-mode-dark-seafoam);
+    background-color: var(--light-mode-dark-seafoam);
+    margin: 20px 0;
+}
+
+
+/* Styling for desktop and laptop screens */
+@media only screen and (min-width: 700px) {
+    #logged-in-info-desktop {
+        display: block;
+    }
+    #logged-in-info-mobil {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #wrapper {
+        padding: 10px 40px;
+    }
+
+    #content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header {
+        margin-bottom: 50px;
+    }
+
+
+    #logged-in-info-desktop {
+        display: block;
+    }
+    #logged-in-info-mobil {
+        display: none;
+    }
+}

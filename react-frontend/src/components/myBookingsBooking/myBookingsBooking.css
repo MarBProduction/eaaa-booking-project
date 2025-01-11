@@ -1,0 +1,80 @@
+.booking {
+    display: flex;
+    height: 70px;
+}
+.booking input {
+    border: none;
+    cursor: text;
+    font-size: 1em;
+}
+
+.booking-details {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.date-time-location {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.date-time-location .booking_date,
+.date-time-location div {
+    width: 33%;
+}
+
+.booking_date {
+    width: 8em;
+}
+
+.my-bookings-time,
+.my-bookings-room {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.booking_date {
+    width: 8em;
+}
+.my-bookings-time input{
+    width: 3em;
+    text-align: center;
+}
+.my-bookings-room-var {
+    width: 0.8em;
+    text-align: center;
+}
+.my-bookings-room-number {
+    width: 1.5em;
+    text-align: center;
+}
+
+.description-delete {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.description-delete p {
+    width: 100%;
+}
+.delete-button {
+    padding: 10px 15px;
+    width: 5em;
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: var(--light-mode-red);
+    cursor: pointer;
+}
+
+/* Styling for width 700px+ screens */
+@media only screen and (min-width: 700px) {
+    .description-delete {
+        margin-right: 30px;
+    }
+}

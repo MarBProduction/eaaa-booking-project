@@ -1,0 +1,165 @@
+/* Generel styling */
+#popup-confirmation {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+    margin-top: -70px;
+    margin-left: -20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.centerPopUp {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-mode-light-grey);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.scroll-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pop-up-header img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.pop-up-titel {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup-info-sub-title {
+    font-size: 1.2em;
+    margin: 20px 0 10px;
+    color: var(--light-mode-seafoam);
+}
+
+/* Delete soon */
+.popup-confirm-form input {
+    font-size: 1.2em;
+    background-color: var(--light-mode-light-grey);
+    border: none;
+}
+
+.date-confirm-input{
+    color: var(--light-mode-dark-seafoam);
+}
+
+.popup-confirm-time{
+    font-size: 1.2em;
+}
+
+.popup-submit {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    margin: 20px auto 0px auto;
+}
+.popup-submit:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* POST specific styling */
+.popup-confirm-form .booking-description-input-post {
+    background-color: var(--light-grey);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup-submit-post {
+    background-color: var(--light-mode-green);
+}
+
+.booking-submit-error-text {
+    color: var(--light-mode-red);
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* DELETE specific styling */
+.popup-submit-delete {
+    background-color: var(--light-mode-red);
+}
+
+.confirm-popup-booking-description{
+    font-size: 1.2em;
+}
+
+/* To add a scroll option, when virtual keyboard is active */
+@media only screen and (max-height: 500px) {
+    .centerPopUp {
+        margin-top: 3vh;
+        height: 94vh;
+    }
+    
+    .scroll-wrapper {
+        overflow-y: scroll;
+    }
+}
+
+
+
+/* Styling for 450px+ screens */
+@media only screen and (min-width: 450px) {
+    .pop-up-header img {
+        width: 50px;
+    }
+}
+
+
+
+/* Styling for desktop and laptop screens */
+@media only screen and (min-width: 1000px) {
+
+    /* To add a scroll option, when virtual keyboard is active */
+    @media only screen and (max-height: 550px) {
+        .centerPopUp {
+            margin-top: 3vh;
+            height: 94vh;
+        }
+        
+        .scroll-wrapper {
+            overflow-y: scroll;
+        }
+    }
+
+    #popup-confirmation {
+        align-items: center;
+        margin-top: -116px;
+        margin-left: -40px;
+    }
+    
+    .centerPopUp {
+        width: 50%;
+        margin: 0;
+    }
+
+    .popup-info-sub-title {
+        font-size: 1.4em;
+        margin: 40px 0 10px;
+    }
+
+    .popup-submit {
+        margin-top: 40px;
+    }
+}
